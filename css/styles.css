@@ -20,7 +20,7 @@
 
 body {
     font-family:Arial, Helvetica, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #aaa;
     color: #333;
     margin: 3rem 3rem 5% 5%;
     box-shadow: 0 0 0.5rem #000;
@@ -90,6 +90,17 @@ article {
     margin: 1rem;
     border-radius: 1rem;
     box-shadow: 0 0 0.5rem #000;
+    transition: transform .2s ease-in-out,
+        background-color .2s ease-in-out,
+        color .2s ease-in-out;
+}
+
+article:hover {
+    transform: translateY(-0.5rem);
+    background-color: #87262E;
+    color: #f4f4f4;
+    box-shadow: 0 0.5rem 2rem 0 #87262E ,
+        0 0 0 0.1rem #87262E;
 }
 
 article img {
